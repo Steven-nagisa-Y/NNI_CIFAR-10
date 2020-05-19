@@ -90,7 +90,7 @@ searchSpacePath: search_space.json
 #choice: true, false
 useAnnotation: false
 tuner:
-	# 可选用 Random Tuner
+  # 可选用 Random Tuner
   builtinTunerName: TPE
   classArgs:
     #choice: maximize, minimize
