@@ -131,7 +131,7 @@ def train(epoch, batches=-1):
         progress_bar(batch_idx, len(train_loader), 'Loss: %.3f | Acc: %.3f%% (%d/%d)'
                      % (train_loss / (batch_idx + 1), 100. * correct / total, correct, total))
 
-        if batches > 0 and (batch_idx + 1) >= batches:
+        if 0 < batches <= (batch_idx + 1):
             return
 
 
